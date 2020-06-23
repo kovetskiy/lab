@@ -1,3 +1,16 @@
+# FORK
+
+This is a maintained fork of lab with a few new features:
+
+* [x] Creating a project in a specific group (or in a namespace)
+* [x] Renaming a project
+* [ ] Protecting and unprotecting branches (to allow force push)
+* [ ] Import CI variables
+* [ ] Export CI variables
+* [ ] Enable/Disable specific runners for projects
+
+If you're not interested in this very particular features, you should stay with zaquestion/lab.
+
 # git + <img src="https://user-images.githubusercontent.com/3167497/34473826-40b4987c-ef2c-11e7-90b9-5ff322c4966f.png" width="30" height="30"> = gitlab [![Build Status](https://travis-ci.org/kovetskiy/lab.svg?branch=master)](https://travis-ci.org/kovetskiy/lab) [![Go Report Card](https://goreportcard.com/badge/github.com/kovetskiy/lab)](https://goreportcard.com/report/github.com/kovetskiy/lab) [![codecov](https://codecov.io/gh/kovetskiy/lab/branch/master/graph/badge.svg)](https://codecov.io/gh/kovetskiy/lab) [![Join the chat at https://gitter.im/labcli](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/labcli) [![CC0 License](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/cc0/) [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/zaquestion/donate)
 
 <p align="center"><img src="https://user-images.githubusercontent.com/1964720/42740177-6478d834-8858-11e8-9667-97f193ecb404.gif" align="center"></p>
