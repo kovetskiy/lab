@@ -5,10 +5,10 @@ import (
 	"log"
 	"strings"
 
-	"github.com/spf13/cobra"
-	"github.com/xanzy/go-gitlab"
 	"github.com/kovetskiy/lab/internal/git"
 	"github.com/kovetskiy/lab/internal/lab"
+	"github.com/spf13/cobra"
+	"github.com/xanzy/go-gitlab"
 )
 
 // private and public are defined in snippet_create.go

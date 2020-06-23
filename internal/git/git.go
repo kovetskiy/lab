@@ -184,6 +184,17 @@ func RemoteAdd(name, url, dir string) error {
 	return nil
 }
 
+// RemoteSet both sets a remote and fetches it
+func RemoteSet(name, url, dir string) error {
+	cmd := New("remote", "set-url", name, url)
+	cmd.Dir = dir
+	if err := cmd.Run(); err != nil {
+		return err
+	}
+	fmt.Printf("remote %q updated to: %s\n", name, url)
+	return nil
+}
+
 // IsRemote returns true when passed a valid remote in the git repo
 func IsRemote(remote string) (bool, error) {
 	cmd := New("remote")
