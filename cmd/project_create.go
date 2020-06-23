@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/xanzy/go-gitlab"
 	"github.com/kovetskiy/lab/internal/git"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 // private and public are defined in snippet_create.go

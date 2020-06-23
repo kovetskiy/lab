@@ -8,7 +8,7 @@ import (
 	gitconfig "github.com/tcnksm/go-gitconfig"
 	gitlab "github.com/xanzy/go-gitlab"
 	"github.com/kovetskiy/lab/internal/git"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 // mrCheckoutConfig holds configuration values for calls to lab mr checkout

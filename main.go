@@ -13,7 +13,7 @@ import (
 	"github.com/kovetskiy/lab/cmd"
 	"github.com/kovetskiy/lab/internal/config"
 	"github.com/kovetskiy/lab/internal/git"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 // version gets set on releases during build by goreleaser.

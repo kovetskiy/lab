@@ -19,7 +19,7 @@ import (
 	"github.com/stretchr/testify/require"
 	gitlab "github.com/xanzy/go-gitlab"
 	"github.com/kovetskiy/lab/internal/copy"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 var labBinaryPath string

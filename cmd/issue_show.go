@@ -9,7 +9,7 @@ import (
 	"github.com/charmbracelet/glamour"
 	"github.com/spf13/cobra"
 	gitlab "github.com/xanzy/go-gitlab"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 var issueShowCmd = &cobra.Command{

@@ -15,7 +15,7 @@ import (
 	"github.com/spf13/cobra"
 	gitconfig "github.com/tcnksm/go-gitconfig"
 	"github.com/kovetskiy/lab/internal/git"
-	lab "github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
 )
 
 // RootCmd represents the base command when called without any subcommands

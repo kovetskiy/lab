@@ -4,9 +4,9 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/spf13/cobra"
 	"github.com/kovetskiy/lab/internal/browser"
-	"github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
+	"github.com/spf13/cobra"
 )
 
 var browse = browser.Open
@@ -22,7 +22,7 @@ var issueBrowseCmd = &cobra.Command{
 			log.Fatal(err)
 		}
 
-		project, err := gitlab.FindProject(rn)
+		project, err := lab.FindProject(rn)
 		if err != nil {
 			log.Fatal(err)
 		}

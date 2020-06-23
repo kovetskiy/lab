@@ -6,9 +6,9 @@ import (
 	"time"
 
 	retry "github.com/avast/retry-go"
-	"github.com/spf13/cobra"
 	"github.com/kovetskiy/lab/internal/git"
-	"github.com/kovetskiy/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/lab"
+	"github.com/spf13/cobra"
 )
 
 // cloneCmd represents the clone command
@@ -21,8 +21,8 @@ var cloneCmd = &cobra.Command{
 - namespace/repo
 - namespace/group/repo`,
 	Run: func(cmd *cobra.Command, args []string) {
-		project, err := gitlab.FindProject(args[0])
-		if err == gitlab.ErrProjectNotFound {
+		project, err := lab.FindProject(args[0])
+		if err == lab.ErrProjectNotFound {
 			err = git.New(append([]string{"clone"}, args...)...).Run()
 			if err != nil {
 				log.Fatal(err)
@@ -45,14 +45,14 @@ var cloneCmd = &cobra.Command{
 		// treating forks as origin. Add upstream as remoted pointing
 		// to forked from repo
 		if project.ForkedFromProject != nil &&
-			strings.Contains(project.PathWithNamespace, gitlab.User()) {
+			strings.Contains(project.PathWithNamespace, lab.User()) {
 			var dir string
 			if len(args) > 1 {
 				dir = args[1]
 			} else {
 				dir = project.Name
 			}
-			ffProject, err := gitlab.FindProject(project.ForkedFromProject.PathWithNamespace)
+			ffProject, err := lab.FindProject(project.ForkedFromProject.PathWithNamespace)
 			if err != nil {
 				log.Fatal(err)
 			}
