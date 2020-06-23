@@ -18,13 +18,13 @@ To run the *lab* tests, you will need:
 3. The `GOPATH` environment variable needs to be explicitly set. (eg `export GOPATH=$(go env GOPATH)`)
 4. Add `$GOPATH/bin` to your `$PATH`.
 5. The `GO111MODULE` environment variable needs to be set to `on`. (eg `export GO111MODULE=on`)
-6. The tests assume that the lab source repo is located in `$GOPATH/src/github.com/zaquestion/lab`
+6. The tests assume that the lab source repo is located in `$GOPATH/src/github.com/kovetskiy/lab`
 
 ## Running Tests
 Tests can be run via `make test`:
 
 ```sh
-$ cd $GOPATH/src/github.com/zaquestion/lab
+$ cd $GOPATH/src/github.com/kovetskiy/lab
 
 # run all tests
 $ make test
@@ -36,7 +36,7 @@ $ make test run=pattern
 or with `go test`:
 
 ```sh
-$ cd $GOPATH/src/github.com/zaquestion/lab
+$ cd $GOPATH/src/github.com/kovetskiy/lab
 
 $ GO111MODULE=on go test ./cmd ./internal/...
 ```

@@ -1,4 +1,4 @@
-# git + <img src="https://user-images.githubusercontent.com/3167497/34473826-40b4987c-ef2c-11e7-90b9-5ff322c4966f.png" width="30" height="30"> = gitlab [![Build Status](https://travis-ci.org/zaquestion/lab.svg?branch=master)](https://travis-ci.org/zaquestion/lab) [![Go Report Card](https://goreportcard.com/badge/github.com/zaquestion/lab)](https://goreportcard.com/report/github.com/zaquestion/lab) [![codecov](https://codecov.io/gh/zaquestion/lab/branch/master/graph/badge.svg)](https://codecov.io/gh/zaquestion/lab) [![Join the chat at https://gitter.im/labcli](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/labcli) [![CC0 License](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/cc0/) [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/zaquestion/donate)
+# git + <img src="https://user-images.githubusercontent.com/3167497/34473826-40b4987c-ef2c-11e7-90b9-5ff322c4966f.png" width="30" height="30"> = gitlab [![Build Status](https://travis-ci.org/kovetskiy/lab.svg?branch=master)](https://travis-ci.org/kovetskiy/lab) [![Go Report Card](https://goreportcard.com/badge/github.com/kovetskiy/lab)](https://goreportcard.com/report/github.com/kovetskiy/lab) [![codecov](https://codecov.io/gh/kovetskiy/lab/branch/master/graph/badge.svg)](https://codecov.io/gh/kovetskiy/lab) [![Join the chat at https://gitter.im/labcli](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/labcli) [![CC0 License](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/share-your-work/public-domain/cc0/) [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/zaquestion/donate)
 
 <p align="center"><img src="https://user-images.githubusercontent.com/1964720/42740177-6478d834-8858-11e8-9667-97f193ecb404.gif" align="center"></p>
 
@@ -51,7 +51,7 @@ apk add lab
 
 Installs lab into `/usr/local/bin/`
 ```
-curl -s https://raw.githubusercontent.com/zaquestion/lab/master/install.sh | sudo bash
+curl -s https://raw.githubusercontent.com/kovetskiy/lab/master/install.sh | sudo bash
 ```
 NOTE: Please take care when executing scripts in this fashion. Make sure you
 trust the developer providing the script and consider peaking at the install
@@ -59,7 +59,7 @@ script itself (ours is pretty simply ;)
 
 ### PreBuilt Binaries
 
-Head to the [releases](https://github.com/zaquestion/lab/releases) page and download your preferred release
+Head to the [releases](https://github.com/kovetskiy/lab/releases) page and download your preferred release
 
 ### Source
 
@@ -67,7 +67,7 @@ Required
 * [Go 1.12+](https://golang.org/doc/install)
 
 ```
-git clone git@github.com:zaquestion/lab
+git clone git@github.com:kovetskiy/lab
 cd lab
 go install -ldflags "-X \"main.version=$(git  rev-parse --short=10 HEAD)\"" .
 ```
@@ -137,12 +137,12 @@ alias git=lab
   <br />
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="https://github.com/zaquestion/lab">
+     href="https://github.com/kovetskiy/lab">
     <span property="dct:title">Zaq? Wiedmann</span></a>
   has waived all copyright and related or neighboring rights to
   <span property="dct:title">Lab</span>.
   This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
-      content="US" about="https://github.com/zaquestion/lab">
+      content="US" about="https://github.com/kovetskiy/lab">
   United States</span>.
 </p>

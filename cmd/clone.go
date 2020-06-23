@@ -7,8 +7,8 @@ import (
 
 	retry "github.com/avast/retry-go"
 	"github.com/spf13/cobra"
-	"github.com/zaquestion/lab/internal/git"
-	"github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/git"
+	"github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // cloneCmd represents the clone command

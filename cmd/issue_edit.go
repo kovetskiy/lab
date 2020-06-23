@@ -12,8 +12,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/git"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 var issueEditCmd = &cobra.Command{

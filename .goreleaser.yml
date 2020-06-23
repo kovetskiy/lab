@@ -6,7 +6,7 @@ release:
   name_template: '{{.Tag}}'
 brew:
   description: "Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab"
-  homepage: "https://github.com/zaquestion/lab"
+  homepage: "https://github.com/kovetskiy/lab"
   github:
     owner: zaquestion
     name: homebrew-tap
@@ -28,7 +28,7 @@ scoop:
   commit_author:
     name: goreleaserbot
     email: goreleaser@carlosbecker.com
-  homepage: "https://github.com/zaquestion/lab"
+  homepage: "https://github.com/kovetskiy/lab"
   description: "Lab wraps Git or Hub, making it simple to clone, fork, and interact with repositories on GitLab"
   license: CC0
 builds:

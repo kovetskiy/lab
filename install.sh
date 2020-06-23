@@ -55,8 +55,8 @@ case $(uname -s) in
         ;;
 esac
 
-latest="$(curl -sL 'https://api.github.com/repos/zaquestion/lab/releases/latest' | grep 'tag_name' | grep --only 'v[0-9\.]\+' | cut -c 2-)"
+latest="$(curl -sL 'https://api.github.com/repos/kovetskiy/lab/releases/latest' | grep 'tag_name' | grep --only 'v[0-9\.]\+' | cut -c 2-)"
 
-curl -sL "https://github.com/zaquestion/lab/releases/download/v${latest}/lab_${latest}_${os}_${machine}.tar.gz" | tar -C /tmp/ -xzf -
+curl -sL "https://github.com/kovetskiy/lab/releases/download/v${latest}/lab_${latest}_${os}_${machine}.tar.gz" | tar -C /tmp/ -xzf -
 install -m755 /tmp/lab $BINDIR/lab
 echo "Successfully installed lab into $BINDIR/"

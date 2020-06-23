@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/tcnksm/go-gitconfig"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/git"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // forkCmd represents the fork command

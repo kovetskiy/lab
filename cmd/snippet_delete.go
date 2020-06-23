@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/spf13/cobra"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // snippetDeleteCmd represents the snippetDelete command

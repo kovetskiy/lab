@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/xanzy/go-gitlab"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 var projectListConfig struct {

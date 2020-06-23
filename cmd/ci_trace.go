@@ -13,8 +13,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/git"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // ciLintCmd represents the lint command

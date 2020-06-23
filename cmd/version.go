@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/zaquestion/lab/internal/git"
+	"github.com/kovetskiy/lab/internal/git"
 )
 
 // Version is set with linker flags during build.

@@ -9,7 +9,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 func Test_fork(t *testing.T) {

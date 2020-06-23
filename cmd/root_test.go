@@ -18,8 +18,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/copy"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/copy"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 var labBinaryPath string
@@ -29,11 +29,11 @@ func TestMain(m *testing.M) {
 	// Build a lab binary with test symbols. If the parent test binary was run
 	// with coverage enabled, enable coverage on the child binary, too.
 	var err error
-	labBinaryPath, err = filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata/" + labBinary))
+	labBinaryPath, err = filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/kovetskiy/lab/testdata/" + labBinary))
 	if err != nil {
 		log.Fatal(err)
 	}
-	testCmd := []string{"test", "-c", "-o", labBinaryPath, "github.com/zaquestion/lab"}
+	testCmd := []string{"test", "-c", "-o", labBinaryPath, "github.com/kovetskiy/lab"}
 	if coverMode := testing.CoverMode(); coverMode != "" {
 		testCmd = append(testCmd, "-covermode", coverMode, "-coverpkg", "./...")
 	}
@@ -74,7 +74,7 @@ func TestMain(m *testing.M) {
 		log.Fatalf("Error chdir to original working dir: %s", err)
 	}
 	os.Remove(labBinaryPath)
-	testdirs, err := filepath.Glob(os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata-*"))
+	testdirs, err := filepath.Glob(os.ExpandEnv("$GOPATH/src/github.com/kovetskiy/lab/testdata-*"))
 	if err != nil {
 		log.Printf("Error listing glob testdata-*: %s", err)
 	}
@@ -414,11 +414,11 @@ type fatalLogger interface {
 // Note: testdata-* must be in the .gitignore or the copies will create write
 // errors as Git attempts to add the Git repo to the the project repo's index.
 func copyTestRepo(log fatalLogger) string {
-	dst, err := filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata-" + strconv.Itoa(int(rand.Uint64()))))
+	dst, err := filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/kovetskiy/lab/testdata-" + strconv.Itoa(int(rand.Uint64()))))
 	if err != nil {
 		log.Fatal(err)
 	}
-	src, err := filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/zaquestion/lab/testdata"))
+	src, err := filepath.Abs(os.ExpandEnv("$GOPATH/src/github.com/kovetskiy/lab/testdata"))
 	if err != nil {
 		log.Fatal(err)
 	}

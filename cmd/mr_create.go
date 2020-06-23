@@ -15,8 +15,8 @@ import (
 	"github.com/spf13/cobra"
 	gitconfig "github.com/tcnksm/go-gitconfig"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/git"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // mrCmd represents the mr command

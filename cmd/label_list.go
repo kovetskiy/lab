@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 var labelListCmd = &cobra.Command{

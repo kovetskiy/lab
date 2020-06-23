@@ -20,7 +20,7 @@ import (
 
 	"github.com/pkg/errors"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/internal/git"
+	"github.com/kovetskiy/lab/internal/git"
 )
 
 // ErrProjectNotFound is returned when a GitLab project cannot be found.

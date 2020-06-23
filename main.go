@@ -10,10 +10,10 @@ import (
 
 	"github.com/spf13/viper"
 	gitlab "github.com/xanzy/go-gitlab"
-	"github.com/zaquestion/lab/cmd"
-	"github.com/zaquestion/lab/internal/config"
-	"github.com/zaquestion/lab/internal/git"
-	lab "github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/cmd"
+	"github.com/kovetskiy/lab/internal/config"
+	"github.com/kovetskiy/lab/internal/git"
+	lab "github.com/kovetskiy/lab/internal/gitlab"
 )
 
 // version gets set on releases during build by goreleaser.

@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	"github.com/spf13/cobra"
-	"github.com/zaquestion/lab/internal/browser"
-	"github.com/zaquestion/lab/internal/gitlab"
+	"github.com/kovetskiy/lab/internal/browser"
+	"github.com/kovetskiy/lab/internal/gitlab"
 )
 
 var browse = browser.Open
