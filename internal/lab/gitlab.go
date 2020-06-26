@@ -841,6 +841,12 @@ func CITrigger(pid interface{}, opts gitlab.RunPipelineTriggerOptions) (*gitlab.
 	return p, nil
 }
 
+// BraBranchUnprotect unprotects branch
+func BranchUnprotect(pid interface{}, branch string) error {
+	_, err := lab.ProtectedBranches.UnprotectRepositoryBranches(pid, branch)
+	return err
+}
+
 // UserIDFromUsername returns the associated Users ID in GitLab. This is useful
 // for API calls that allow you to reference a user, but only by ID.
 func UserIDFromUsername(username string) (int, error) {
