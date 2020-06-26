@@ -4,7 +4,8 @@ This is a maintained fork of lab with a few new features:
 
 * [x] Creating a project in a specific group (or in a namespace)
 * [x] Renaming a project
-* [ ] Protecting and unprotecting branches (to allow force push)
+* [x] Unprotecting branches (to allow force push)
+* [ ] Protecting branches
 * [ ] Import CI variables
 * [ ] Export CI variables
 * [ ] Enable/Disable specific runners for projects
